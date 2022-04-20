@@ -7,9 +7,126 @@
     <title>Dropbox Business</title>
     <meta name="description" content="Esercizio di riproduzione di Dropbox Business">
     <meta name="keywords" content="dropbox, business, esercizio">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
-    
+    <header>
+        <nav class="row space-between">
+            <div class="nav-links row align-center">
+                <img id="nav-logo" src="img/logo-small.png" alt="Logo Dropbox">
+
+                <ul>
+                    <li><a class="clickable" href="#">Perché Dropbox</a></li>
+                    <li><a class="clickable" href="#">Funzioni</a></li>
+                    <li><a class="clickable" href="#">Piani e Prezzi</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-links">
+                <ul>
+                    <li><a class="clickable" href="#">Supporto</a></li>
+                    <li><a class="clickable" href="#">Contatta l'ufficio vendite</a></li>
+                    <li><a class="clickable" href="#">Accedi</a></li>
+                    <li><a class="clickable button-blue" href="#">Inizia</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="jumbotron">
+            <div class="container bottom-translate space-bottom-default">
+                <h1 id="main-title" class="space-bottom-default">Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
+
+                <div class="row">
+                    <div class="small-col">
+                        <p class="space-bottom-small">Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.</p>
+
+                        <a class="clickable button-blue space-bottom-small" href="#">Inizia la tua prova gratuita</a>
+
+                        <div class="space-bottom-default">Annulla in qualsiasi momento</div>
+
+                        <span><i class="fa-solid fa-arrow-down fa-3x"></i></span>
+                    </div>
+
+                    <div class="large-col">
+                        <img id="jumbotron-img" src="img/jumbo.png" alt="Esempio di utilizzo di Dropbox Business">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="section-spacing-default">
+            <div class="container container-small">
+                <h2 class="section-title space-bottom-default">Trova il piano business che fa per te</h2>
+
+                <input type="radio" id="billingChoice1" name="billing" value="monthly">
+                <label for="contactChoice1">Fatturazione mensile</label>
+                <input type="radio" id="billingChoice2" name="billing" value="yearly">
+                <label for="contactChoice2">Fatturazione annuale</label>
+
+                <div class="row space-between col-gap-default">
+                    <div class="small-col">
+                        <div>
+                            <h6><i class="fa-solid fa-user"></i>Singolo</h6>
+                        </div>
+                        
+                        <div>
+                            <h4>Professional</h4>
+
+                            <div>€ 12.00</div>
+
+                            <div>/mese</div>
+
+                            <ul>
+                                <li>1 utente</li>
+                                <li>5 TB di spazio di archiviazione sicuro</li>
+                                <li>Funzioni di produttività premium e condivisione file semplice e sicura</li>
+                            </ul>
+
+                            <a href="#">Prova gratis per 30 giorni</a>
+
+                            <div>oppure <a href="#">acquista ora</a></div>
+
+                            <hr>
+
+                            <h5>Punti Salienti del piano</h5>
+
+                            <ul>
+                                <li>Invia file fino a 100 GB con Dropbox Transfert</li>
+                                <li>Cartelle offline su dispositivi mobili</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gold"></div>
+            </div>
+        </section>
+
+        <section>
+            <div class="teal row space-between">
+                <div class="gold"></div>
+                <div class="gold"></div>
+            </div>
+        </section>
+        <section>
+            <div class="teal">
+                <h2>Esegui più operazioni con Dropbox Business</h2>
+                <div class="row space-between">
+                    <div class="gold"></div>
+                    <div class="gold"></div>
+                    <div class="gold"></div>
+                    <div class="gold"></div>
+                    <div class="gold"></div>
+                    <div class="gold"></div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
