@@ -5,7 +5,7 @@
 }
 
 body {
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -19,24 +19,34 @@ a {
     text-decoration: none;
 }
 
-.space-bottom-default, .container.space-bottom-default {
+header {
+    margin-bottom: 5rem;
+}
+
+/* Forse esiste un modo migliore per sovrascrivere il margin di container */
+.margin-bottom-default, .container.margin-bottom-default {
     margin-bottom: 3rem;
 }
 
-.space-bottom-small {
+.margin-bottom-large {
+    margin-bottom: 5rem;
+}
+
+.margin-bottom-small {
     margin-bottom: 1.5rem;
 }
 
-.space-bottom-smaller {
+.margin-bottom-smaller {
     margin-bottom: 0.75rem;
 }
 
-.section-spacing-default {
+.section-padding-default {
     padding: 2rem 0;
 }
 
 .row {
     display: flex;
+    gap: var(--gap, 0);
 }
 
 .space-between {
@@ -47,28 +57,36 @@ a {
     align-items: center;
 }
 
-.col-gap-default {
-    gap: 1rem;
+.align-self-start {
+    align-self: flex-start;
+}
+
+.gap-3 {
+    gap: 3rem;
 }
 
 .small-col {
+    flex-basis: 30%;
+}
+
+.col-3 {
     flex-basis: calc(100% / 3);
 }
 
 .large-col {
-    flex-basis: calc(100% / 3 * 2);
-}
-
-.clickable {
-    display: inline-block;
-    padding: 0.5rem 1rem;
+    flex-basis: 70%;
 }
 
 .nav-links {
     padding: 1.5rem;
 }
 
-.button-blue {
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+}
+
+.btn-blue {
     background-color: #0061FF;
     color: white;
 }
@@ -78,73 +96,75 @@ a {
 }
 
 .container {
-    max-width: 960px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
 .container.container-small {
-    max-width: 800px;
+    max-width: 1080px;
 }
 
-.bottom-translate {
+.translate-bottom {
     position: relative;
-    top: 3rem;
+    top: 5rem;
 }
 
 .section-title {
-    font-size: 2rem;
+    font-size: 2.7rem;
 }
 
-.billing-plan-column {
+.billing-plan {
     border: 1px solid #ccc;
+    height: 100%;
 }
 
-.billing-plan-column-title {
+.billing-plan-title {
     text-align: center;
     border-bottom: 1px solid #ccc;
 }
 
-.billing-plan-column-title i {
+.billing-plan-title i {
     padding: 0.7rem 0.3rem;
 }
 
-.billing-plan-column-description {
-    padding: 1rem;
+.billing-plan-info {
+    padding: 3rem 1.5rem;
 }
 
-.billing-plan-column-description.billing-plan-column-description-big {
+.billing-plan-info.billing-plan-info-big {
     padding: 1.5rem;
 }
 
-.billing-plan-column-description .billing-plan-column-description-name {
+.billing-plan-info .billing-plan-info-name {
     font-size: 1.5rem;
 }
 
-.billing-plan-column-description .billing-plan-column-description-price {
+.billing-plan-info .billing-plan-info-price {
     font-weight: 700;
 }
 
-.billing-plan-column-description .fa-ul {
+.billing-plan-info .fa-ul {
     margin-left: var(--fa-li-margin, 1.5em);
 }
 
-.billing-plan-column-description .billing-plan-column-description-button-container {
+.billing-plan-info .btn {
     text-align: center;
+    width: 100%;
 }
 
-.billing-plan-column-description .billing-plan-column-description-link {
+.billing-plan-info .billing-plan-info-link {
     color: blue;
     text-decoration: underline;
 }
 
-.billing-plan-column-description hr {
+.billing-plan-info hr {
     width: 20%;
     border:0;
     height:1px;
     background:#ccc;
 }
 
-.billing-plan-column-description ul li .fa-check {
+.billing-plan-info ul li .fa-check {
     color:#0061FF;
 }
 
@@ -155,7 +175,7 @@ a {
 }
 
 #main-title {
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 800;
 }
 
