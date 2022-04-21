@@ -36,6 +36,10 @@ h3 {
     font-size: 1.5rem;
 }
 
+h5 {
+    font-size: 1rem;
+}
+
 /* Forse esiste un modo migliore per sovrascrivere il margin di container */
 .margin-bottom-default, .container.margin-bottom-default {
     margin-bottom: 3rem;
@@ -55,6 +59,10 @@ h3 {
 
 .padding-default {
     padding: 5rem 0;
+}
+
+.padding-small {
+    padding: 2.5rem 0;
 }
 
 .row {
@@ -96,6 +104,10 @@ h3 {
     flex-basis: calc((100% - (3rem * 2)) / 3);
 }
 
+.col-2 {
+    flex-basis: 50%;
+}
+
 .large-col {
     flex-basis: 70%;
 }
@@ -114,8 +126,25 @@ h3 {
     color: white;
 }
 
-.btn-white {
+.btn-transparent {
     border: 1px solid black;
+}
+
+.btn-white {
+    background-color: white;
+}
+
+.btn-long {
+    text-align: center;
+    width: 100%;
+}
+
+.bg-light-blue {
+    background-color: #B4D0E7;
+}
+
+.red-text {
+    color: #61082B;
 }
 
 .jumbotron {
@@ -158,20 +187,11 @@ h3 {
     padding: 1.5rem;
 }
 
-.billing-plan-info .billing-plan-info-price {
-    font-weight: 700;
-}
-
 .billing-plan-info .fa-ul {
     margin-left: var(--fa-li-margin, 1.5em);
 }
 
-.billing-plan-info .btn {
-    text-align: center;
-    width: 100%;
-}
-
-.billing-plan-info .billing-plan-info-link {
+.normal-link-style {
     color: blue;
     text-decoration: underline;
 }
@@ -196,4 +216,12 @@ h3 {
 .img-fit {
     max-width:100%;
     max-height:100%;
+}
+
+.btn-container {
+    padding: 1rem;
+}
+
+.border-bottom {
+    border-bottom: 1px solid;
 }
