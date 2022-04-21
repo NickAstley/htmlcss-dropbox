@@ -23,6 +23,19 @@ header {
     margin-bottom: 5rem;
 }
 
+h1 {
+    font-size: 5rem;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 2.7rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
 /* Forse esiste un modo migliore per sovrascrivere il margin di container */
 .margin-bottom-default, .container.margin-bottom-default {
     margin-bottom: 3rem;
@@ -40,13 +53,17 @@ header {
     margin-bottom: 0.75rem;
 }
 
-.section-padding-default {
-    padding: 2rem 0;
+.padding-default {
+    padding: 5rem 0;
 }
 
 .row {
     display: flex;
     gap: var(--gap, 0);
+}
+
+.row-wrap {
+    flex-wrap: wrap;
 }
 
 .space-between {
@@ -65,12 +82,18 @@ header {
     gap: 3rem;
 }
 
+/* Perché non funziona solo con flex-grow? */
+.col{
+    flex: 1 1 0px;
+}
+
 .small-col {
     flex-basis: 30%;
 }
 
+/* Posso indicare il gap come variabile? */
 .col-3 {
-    flex-basis: calc(100% / 3);
+    flex-basis: calc((100% - (3rem * 2)) / 3);
 }
 
 .large-col {
@@ -91,6 +114,10 @@ header {
     color: white;
 }
 
+.btn-white {
+    border: 1px solid black;
+}
+
 .jumbotron {
     background-color: #B4D0E7;
 }
@@ -107,10 +134,6 @@ header {
 .translate-bottom {
     position: relative;
     top: 5rem;
-}
-
-.section-title {
-    font-size: 2.7rem;
 }
 
 .billing-plan {
@@ -133,10 +156,6 @@ header {
 
 .billing-plan-info.billing-plan-info-big {
     padding: 1.5rem;
-}
-
-.billing-plan-info .billing-plan-info-name {
-    font-size: 1.5rem;
 }
 
 .billing-plan-info .billing-plan-info-price {
@@ -169,17 +188,12 @@ header {
 }
 
 
-#nav-logo {
+.nav-logo {
     height: 25px;
     margin-right: 1rem;
 }
 
-#main-title {
-    font-size: 5rem;
-    font-weight: 800;
-}
-
-#jumbotron-img {
+.img-fit {
     max-width:100%;
     max-height:100%;
 }
