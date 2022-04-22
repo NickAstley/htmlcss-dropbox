@@ -11,16 +11,11 @@ body {
 
 ul li {
     list-style: none;
-    display: inline-block;
 }
 
 a {
     color: inherit;
     text-decoration: none;
-}
-
-header {
-    margin-bottom: 5rem;
 }
 
 h1 {
@@ -40,12 +35,31 @@ h5 {
     font-size: 1rem;
 }
 
-/* Forse esiste un modo migliore per sovrascrivere il margin di container */
-.margin-bottom-default, .container.margin-bottom-default {
+nav ul li {
+    display: inline-block;
+}
+
+header {
+    position: sticky;
+    top:0;
+    left:0;
+    right: 0;
+    z-index: 1;
+    background-color: white;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+.margin-bottom-default {
     margin-bottom: 3rem;
 }
 
-.margin-bottom-large {
+/* Forse esiste un modo migliore per sovrascrivere il margin di container */
+.margin-bottom-large, .container.margin-bottom-large {
     margin-bottom: 5rem;
 }
 
@@ -90,7 +104,6 @@ h5 {
     gap: 3rem;
 }
 
-/* Perché non funziona solo con flex-grow? */
 .col{
     flex: 1 1 0px;
 }
@@ -143,12 +156,48 @@ h5 {
     background-color: #B4D0E7;
 }
 
+.bg-lime {
+    background-color: #9BDA8E;
+}
+
+.bg-light-green {
+    background-color: #CDEEC4;
+}
+
+.bg-brown {
+    background-color: #74604B;
+}
+
+.bg-azure {
+    background-color: #3AB3AD;
+}
+
+.bg-orange {
+    background-color: #D36C42;
+}
+
+.bg-brick {
+    background-color: #BA5B44;
+}
+
+.bg-aqua {
+    background-color: #A6D8BC;
+}
+
+.bg-bismark {
+    background-color: #42717E;
+}
+
+.bg-yellow {
+    background-color: #D3DD4E;
+}
+
 .red-text {
     color: #61082B;
 }
 
-.jumbotron {
-    background-color: #B4D0E7;
+.grey-text {
+    color: #989897;
 }
 
 .container {
@@ -160,7 +209,7 @@ h5 {
     max-width: 1080px;
 }
 
-.translate-bottom {
+.offset-bottom {
     position: relative;
     top: 5rem;
 }
@@ -196,7 +245,7 @@ h5 {
     text-decoration: underline;
 }
 
-.billing-plan-info hr {
+.small-divider {
     width: 20%;
     border:0;
     height:1px;
@@ -206,7 +255,6 @@ h5 {
 .billing-plan-info ul li .fa-check {
     color:#0061FF;
 }
-
 
 .nav-logo {
     height: 25px;
@@ -218,10 +266,36 @@ h5 {
     max-height:100%;
 }
 
+.square-logo {
+    width: 50%;
+    filter: invert(93%) sepia(28%) saturate(291%) hue-rotate(45deg) brightness(96%) contrast(93%);
+}
+
 .btn-container {
     padding: 1rem;
 }
 
 .border-bottom {
     border-bottom: 1px solid;
+}
+
+.arrow-container {
+    padding: 0 3rem;
+}
+
+.square {
+    width: 50%;
+    aspect-ratio: 1/1;
+    justify-content: center;
+    align-items: center;
+}
+
+.partner {
+    padding: 3rem;
+    aspect-ratio: 1/1;
+    overflow: auto;
+}
+
+.partner .partner-logo {
+    width: 50%;
 }
